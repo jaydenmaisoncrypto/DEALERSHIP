@@ -34,7 +34,7 @@ const Getproduct =() => {
     <div className='row'>
       <h3 className='text-dark'>Available products</h3>
 
-<Caroousel/>
+
       {/* products card design */}
       {products.map((product) =>(
       <div className='col-md-3 justify-content-center mb-4'>
@@ -56,7 +56,6 @@ const Getproduct =() => {
         </div>
       </div>
       ))}
-      <Footer/>
     </div>
   )
 }

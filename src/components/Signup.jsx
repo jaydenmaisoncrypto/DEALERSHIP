@@ -1,7 +1,6 @@
 import axios from 'axios'
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import Footer from './Footer'
 
 const Signup = () => {
 
@@ -84,7 +83,6 @@ const submitSignupDetails =async(e)=>{
         <Link to='/signin'>Already have an account ? Signin</Link>
         </form>
       </div>
-      <Footer/>
     </div>
   )
 }

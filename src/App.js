@@ -8,11 +8,16 @@ import Signup from './components/Signup';
 import Addproduct from './components/Addproduct';
 import Getproduct from './components/Getproduct';
 import Mpesapayment from './components/Mpesapayment';
+import Navbar from './components/Navbar';
+import Caroousel from './components/Caroousel';
+import Footer from './components/Footer';
 
 
 function App() {
   return (
     <Router>
+      <Navbar/>
+      <Caroousel/>
       <div className='App'>
         <div className='App-header'>
           <h1 className='text-primary'>Welcome to Sadera Car Dealership</h1>
@@ -30,6 +35,7 @@ function App() {
           <Route path='/' element={<Getproduct/>}/>
           <Route path='/makepayment' element={<Mpesapayment/>}/>
         </Routes>
+        <Footer/>
       </div>
     </Router>
   );

@@ -1,7 +1,7 @@
 import axios from "axios"
 import React, { useState } from "react"
 import { Link, useNavigate } from "react-router-dom"
-import Footer from "./Footer"
+
 
 const Signin = () => {
 
@@ -57,7 +57,6 @@ const Signin = () => {
           <Link to='/signup'>Don't have an account ? Signup</Link>
         </form>
       </div>
-      <Footer/>
     </div>
   )
 

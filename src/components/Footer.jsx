@@ -5,7 +5,7 @@ const Footer = () => {
       <section className='row text-center bg-warning p-4'>
             <div className='col-md-4 text-light'>
                 <h4 className='text-light'>About us</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, repellat repellendus ipsum id temporibus natus fugiat fuga quas, ex consequatur voluptatem inventore est maxime asperiores suscipit. Vitae rerum provident dignissimos.</p>
+                <p>We are passionate about building modern, responsive, and user-friendly digital cars. Our goal is to turn ideas into functional and visually appealing solutions that make an impact.</p>
             </div>
             <div className='col-md-4'>
                 <h4>Contact us</h4>
@@ -26,7 +26,7 @@ const Footer = () => {
             <a href="https://ww.x.com">
                 <img src="icons/x.png" alt=""/>
             </a>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non nihil obcaecati eum, incidunt aperiam in ab magnam hic praesentium consectetur veniam amet, sed qui perspiciatis voluptate facilis quo odit natus.</p>
+            <p>Follow us on social media to keep up with our latest updates, projects, and insights. Let’s connect and grow together.</p>
             </div>
             <div>
                 <footer className='text-light bg-dark p-2 text-center'>

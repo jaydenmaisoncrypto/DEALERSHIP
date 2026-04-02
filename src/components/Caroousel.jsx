@@ -1,53 +1,41 @@
-import React from 'react'
+import image1 from '../components/images/image1.jpg'
+import image2 from '../components/images/image2.jpg'
+import image3 from '../components/images/image3.jpg'
 
 const Caroousel = () => {
   return (
-    <section className='row'>
-        <div className='col-md-12'>
-            <nav className='navbar navbar-expand-md navbar-light bg-light'>
-                <a href="#" className='navbar-brand'>
-                    <b>Sadera Car Dealership</b>
-                </a>
-                {/* Collapse button */}
-                <button className='navbar-toggler' data-bs-target="#navbarcollapse" data-bs-toggle="collapse">
-                    <span className='navbar-toggler-icon'></span>
-                </button>
-                <div className='collapse navbar-collapse' id='navbarcollapse'>
-                    <div className='navbar-nav'>
-                       <link rel="stylesheet" href="" />
-                    </div>
-                </div>
-            </nav>
+    <div id="carouselExample" className="carousel slide row justify-content-center" data-bs-ride="carousel">
+      
+      {/* Indicators */}
+      <div className="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" className="active"></button>
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2"></button>
+      </div>
+
+      {/* Slides */}
+      <div className="carousel-inner">
+        <div className="carousel-item active">
+          <img src={image1} className="d-block w-100 caroousel_img" height="200px" alt="slide 1" />
         </div>
-    <section className='row'>
-        <div className='col-md-12'>
-            {/* The carousel starts here */}
-            <div className='carousel slide' id='mycarousel' data-be-ride='carousel'>
-                {/* image wrapper */}
-                <div className='carousel-inner'>
-                    <div className='carousel-item active'>
-                        <img src="" alt="" className='d-block w-100'/>
-                    </div>
-                     <div className='carousel-item'>
-                        <img src="images/auris.jpg" alt="" className='d-block w-100'/>
-                    </div>
-                     <div className='carousel-item '>
-                        <img src="images/crown.jpg" alt="" className='d-block w-100'/>
-                    </div>
-                </div>
-                {/* controllers */}
-                <div>
-                    <a href="#mycarousel" className='carousel-control-prev' data-bs-slide="prev">
-                        <span className='carousel-control-prev-icon bg-danger'></span>
-                    </a>
-                    <a href="#mycarousel" className='carousel-control-next' data-bs-slide="next">
-                        <span className='carousel-control-next-icon bg-danger'></span>
-                    </a>
-                </div>
-            </div>
+        <div className="carousel-item">
+          <img src={image2} className="d-block w-100 caroousel_img" height="200px"  alt="slide 2" />
         </div>
-    </section>
-    </section>
+        <div className="carousel-item">
+          <img src={image3} className="d-block w-100 caroousel_img" height="200px"  alt="slide 3" />
+        </div>
+      </div>
+
+      {/* Controls */}
+      <button className="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span className="carousel-control-prev-icon "></span>
+      </button>
+
+      <button className="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span className="carousel-control-next-icon"></span>
+      </button>
+
+    </div>
   )
 }
 

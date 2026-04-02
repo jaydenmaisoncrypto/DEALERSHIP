@@ -1,7 +1,6 @@
 import axios from 'axios';
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
-import Footer from './Footer';
 
 const Addproduct = () => {
   // declaring state variables
@@ -83,7 +82,6 @@ const[success,setSuccess] = useState("")
             /><br />
         </form>
       </div>
-      <Footer/>
     </div>
   )
 }
